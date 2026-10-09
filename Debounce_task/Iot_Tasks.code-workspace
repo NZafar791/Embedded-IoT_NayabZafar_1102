@@ -1,0 +1,16 @@
+{
+	"folders": [
+		{
+			"path": ".."
+		},
+		{
+			"name": "Debounce_task",
+			"path": "."
+		},
+		{
+			"name": "week_4_basicDisplay",
+			"path": "../week_4_basicDisplay"
+		}
+	],
+	"settings": {}
+}

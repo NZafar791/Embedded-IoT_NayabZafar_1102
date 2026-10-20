@@ -1,3 +1,4 @@
+
 {
   "version": 1,
   "author": "Nayab",
@@ -15,25 +16,30 @@
       "id": "oled",
       "top": 150,
       "left": 150,
-      "attrs": { "i2cAddress": "0x3c" }
+      "attrs": {
+        "i2cAddress": "0x3c"
+      }
     },
     {
       "type": "wokwi-pushbutton",
       "id": "btn1",
       "top": 80,
       "left": -100,
-      "attrs": { "color": "green" }
+      "attrs": {
+        "color": "green"
+      }
     }
   ],
-  "connections": [
-    ["oled:VCC", "esp:3V3", "red", []],
-    ["oled:GND", "esp:GND.1", "black", []],
-    ["oled:SDA", "esp:21", "green", []],
-    ["oled:SCL", "esp:22", "blue", []],
-    ["btn1:1.r", "esp:GND.1", "black", []],
-    ["btn1:2.l", "esp:18", "green", []],
-    ["esp:TX", "$serialMonitor:RX", "", []],
-    ["esp:RX", "$serialMonitor:TX", "", []]
+  "connections": 
+  [
+    ["oled:VCC","esp:3V3","red",["v-20", "h-80"]],
+    ["oled:GND","esp:GND.1","black",["v20", "h-100"]],
+    ["oled:SDA","esp:21","green",["v40", "h-120"]],
+    ["oled:SCL","esp:22","blue",["v60", "h-140"]],
+    ["btn1:1.r","esp:GND.1","black",["h20", "v-20"]],
+    ["btn1:2.l","esp:18","green",["h-20", "v20"]],
+    ["esp:TX","$serialMonitor:RX","",[]],
+    ["esp:RX","$serialMonitor:TX","",[]]
   ],
   "dependencies": {}
 }

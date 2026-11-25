@@ -41,7 +41,7 @@ void setup() {
     Serial.print(".");
   }
 
-  // Step 4: Verify Static IP details
+  // Step 4: Verify Static IP details1
   Serial.println("\nConnected! Static IP Details:");
   Serial.print("IP Address: ");
   Serial.println(WiFi.localIP());
